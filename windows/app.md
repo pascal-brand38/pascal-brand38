@@ -24,3 +24,34 @@ has:nouserlabels
 ```
 larger:5M
 ```
+
+# DOS / Windows
+
+* Clean empty data of disk c
+```
+cipher /w:c
+```
+
+# Misc.
+
+* MusicBrainz Picard
+* CopyTrans Control Center / CopyTrans Manager
+* AndreaMosaic
+* Faststone Image Viewer
+* Filezilla
+* CCleaner
+* Defraggler
+* Recuva
+* 7zip
+* ImageMagik
+* CrystalDiskInfo
+* Libreoffice
+* MalewareBytes
+* PdfXChangeViewer
+* Httrack
+* FreeFileSync portable
+* PdfReducerPro Portable
+* OpenShot Video
+* notepad++
+* Visual Studio Code
+* Paint.net
