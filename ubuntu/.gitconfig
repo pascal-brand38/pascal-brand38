@@ -1,0 +1,13 @@
+[core]
+    editor = gedit
+
+[diff]
+    tool = meld
+
+
+[includeIf "gitdir:**"]
+    path = .gitconfig_other
+
+[includeIf "gitdir:**/pascal-brand38/**"]
+    path = ~/.gitconfig_pascal-brand38
+

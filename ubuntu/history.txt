@@ -1,0 +1,45 @@
+    1  mkdir dev/pascal-brand38
+    2  mkdir - dev/pascal-brand38
+    3  mkdir -p dev/pascal-brand38
+    4  mkdir -p dev/other
+    5  ls
+    6  cd dev/pascal-brand38/
+    7  git clone git@github.com:pascal-brand38/ubuntu-utils.git
+    8  sudo apt install git
+    9  git clone git@github.com:pascal-brand38/ubuntu-utils.git
+   10  cd ~/
+   11  ssh-keygen  -h
+   12  ssh-keygen  --help
+   13  ssh-keygen 
+   14  ssh-keygen  -f id_rsa_pascal-brand38
+   15  ssh-keygen  -f id_rsa_other
+   16  ls
+   17  mv id_rsa_* .ssh/
+   18  gedit .ssh/id_rsa_pascal-brand38.pub
+   19  cd dev/pascal-brand38/
+   20  git clone git@github.com:pascal-brand38/ubuntu-utils.git
+   21  ls
+   22  cd ubuntu-utils/
+   23  ls
+   24  cat README.md 
+   25  gedit .gitconfig .gitconfig_pascal-brand38&
+   26  ls
+   27  ls -al
+   28  cd
+   29  ln -s dev/pascal-brand38/ubuntu-utils/.gitconfig
+   30  ln -s dev/pascal-brand38/ubuntu-utils/.gitconfig_pascal-brand38 
+   31  cd -
+   32  git status
+   33  git add .gitconfig*
+   34  git commit -s
+   35  more ~/.gitconfig
+   36  git commit -s
+   37  cat ~/.gitconfig_pascal-brand38
+   38  git commit -s
+   39  git push
+   40  git commit -s
+   41  vi
+   42  git commit -s
+   43  git push
+   44  history
+   45  history>history.txt

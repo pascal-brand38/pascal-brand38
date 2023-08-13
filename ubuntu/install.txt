@@ -1,0 +1,54 @@
+# retrieve this github repo
+mkdir -p dev/pascal-brand38 dev/other
+cd dev/pascal-brand38
+sudo apt install git
+git clone git@github.com:pascal-brand38/ubuntu-utils.git
+
+# ssh keys
+cd ~/.ssh
+ssh-keygen -f id_rsa_pascal-brand38
+ssh-keygen -f id_rsa_other
+
+# git config
+cd ~
+ln -s dev/pascal-brand38/ubuntu-utils/.gitconfig
+ln -s dev/pascal-brand38/ubuntu-utils/.gitconfig_pascal-brand38
+
+# Ubuntu packages
+sudo apt update
+sudo apt install -y gitk python3-pip curl filezilla meld
+
+# codium
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+sudo apt update
+sudo apt install codium
+
+# atom
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey\
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/atom-archive-keyring.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt update
+sudo apt install atom
+
+# old commands - do not use
+
+gnome-tweaks dconf-editor lazpaint-qt5
+
+
+
+sudo snap install codium --classic  # visual studio code
+
+sudo apt install -y tidy
+python3 -m pip install git+https://github.com/pascal-brand38/pyHelper.git
+curl -L  https://raw.githubusercontent.com/pascal-brand38/pyHelper/main/install_ubuntu.sh > /tmp/install.sh
+source /tmp/install.sh
+
+sudo apt install -y sassc ffmpeg
+
+sudo apt install nodejs npm
+sudo npm install --global gulp-cli
