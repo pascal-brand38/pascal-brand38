@@ -9,21 +9,18 @@ Augmenter sa valeur : mettre 600
 Redémarrer TB
 ```
 
-* Import mbox file
-Use ImportExportTools NG add-in
+* Import mbox file: </br>
+  Use *ImportExportTools NG* add-in
+
 
 
 # Gmail
 
-* Find all emails that have no labels at all:
-```
-has:nouserlabels 
-```
+* Find all emails that have no labels at all: </br>
+  **has:nouserlabels**
 
-* Find huge emails:
-```
-larger:5M
-```
+* Find huge emails: </br>
+  **larger:5M**
 
 # DOS / Windows
 
@@ -32,8 +29,23 @@ larger:5M
 cipher /w:c
 ```
 
+* Adding right-click command: 
+In regedit, add the following (%1 is the file that is right-clicked, %w is its directory)
+```
+   HKEY_CLASSES_ROOT\*\shell\My New Command\Command
+   default is
+        C:\msys64\msys2_shell.cmd -mingw64 -c 'python  mybin.py "--file=$0" "--dir=$1"'  "%1" "%w" 
+```
+
+
 # Misc.
 
+## Misc. actions
+
+* svg to png: using Photoshop, open the svg, and set resolution to
+  1200dpi or higher on initial pixellisation step
+
+## Misc. app
 * MusicBrainz Picard
 * CopyTrans Control Center / CopyTrans Manager
 * AndreaMosaic
@@ -55,3 +67,4 @@ cipher /w:c
 * notepad++
 * Visual Studio Code
 * Paint.net
+* Media Player Classic Home Cinema
