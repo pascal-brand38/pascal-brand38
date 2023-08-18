@@ -11,12 +11,14 @@
 
 Main reference is https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
-Once the directory structure is made, build using
+* Installation
 ```
-python3 -m pip install --upgrade build
+python3 -m pip install --upgrade build twine
 python3 -m build
 ```
 
-Do not forget to follow
-https://kiwidamien.github.io/making-a-python-package-vi-including-data-files.html
-steps to include data in your package
+* Upload
+```
+python -m build
+python -m twine upload dist/*
+```
