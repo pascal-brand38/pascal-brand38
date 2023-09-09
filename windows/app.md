@@ -31,14 +31,31 @@ with Acrobat Reader
 </tbody>
 </table>
 
-* A correct pdf must appear with `Aucun problème détecté`
 
-To correct the errors on Acrobat Reader, one must use the previous `Prepress`
-tool, then `Controle en Amont`, and then `Convertir au format PDF/A-2b`,
-and finally `Analyser et corriger`
+To correct errors using Acrobat Reader, save it as `PDF/A 1a`, as in the following:
+![](https://raw.githubusercontent.com/pascal-brand38/docs/main/windows/pdf-save-pdfA-1a.png)
+
+With prepress, this is now possible to check there are no PDF synatx errors
+
+![](https://raw.githubusercontent.com/pascal-brand38/docs/main/windows/pdf-correct.png)
+
+The resulting pdf could then being optimized and reduced using Orpalis Pdf Reducer 3.
+
+There are 2 other ways to check the pdf is not that bad:
+* https://www.pdf-online.com/osa/validate.aspx
+* Run `/c/Program\ Files/gs/gs10.00.0/bin/gswin64.exe -r36x36 file.pdf`
+  and look at the gostscript console the Helevetica font is not
+  loaded several times,...
+
+Note that the following npm package are way too simple
+(look for count page,...):
+* https://www.npmjs.com/package/is-pdf-valid
+* https://www.npmjs.com/package/@ninja-labs/verify-pdf
+* https://www.npmjs.com/package/ghostscript-node
+
+<br>
 
 ____________________________
-
 # Acrobat Reader
 
 ## Forms
@@ -46,12 +63,9 @@ ____________________________
 Open the pdf, then more tools to choose Prepare the form.
 And you now have access to all the fields
 
-
-
 <br>
 
 ____________________________
-
 # Thunderbird
 
 * Solve Temps limite de connexion au serveur IMAP.GMAIL.COM dépassé (cf. https://forums.mozfr.org/viewtopic.php?t=150821)
@@ -68,6 +82,9 @@ Redémarrer TB
 
 
 
+<br>
+
+____________________________
 # Gmail
 
 * Find all emails that have no labels at all: </br>
@@ -76,6 +93,9 @@ Redémarrer TB
 * Find huge emails: </br>
   **larger:5M**
 
+<br>
+
+____________________________
 # DOS / Windows
 
 * Clean empty data of disk c
@@ -91,7 +111,9 @@ In regedit, add the following (%1 is the file that is right-clicked, %w is its d
         C:\msys64\msys2_shell.cmd -mingw64 -c 'python  mybin.py "--file=$0" "--dir=$1"'  "%1" "%w" 
 ```
 
+<br>
 
+____________________________
 # Misc.
 
 ## Misc. actions
