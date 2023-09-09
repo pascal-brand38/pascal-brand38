@@ -1,3 +1,57 @@
+____________________________
+# Libreoffice
+
+## Forms
+* Open Libreoffice writter
+* Choose `ott` format. When reopening, using `Open`, and not the default `New`
+* `[Affichage][Barre d'outils][Contrôle de formulaire]`
+* `[Mode conception]`
+* Export to pdf
+
+
+Unfortunately, the pdf has some errors, that can be highlighted
+with Acrobat Reader
+
+<table>
+<tbody>
+<tr>
+<td>
+<ul>
+<li> Use tool `Prepress` (`Preflight in english`) </li>
+<li> Click on `Controle en Amont` </li>
+<li> Select `Rapport sur les problèmes de syntaxe PDF` </li>
+<li> Click on `Analyse` </li>
+<li> Here are typical errors: </li>
+</td>
+
+<td>
+<img src="https://raw.githubusercontent.com/pascal-brand38/docs/main/windows/pdf-errors.png"/>
+</td>
+</tr>
+</tbody>
+</table>
+
+* A correct pdf must appear with `Aucun problème détecté`
+
+To correct the errors on Acrobat Reader, one must use the previous `Prepress`
+tool, then `Controle en Amont`, and then `Convertir au format PDF/A-2b`,
+and finally `Analyser et corriger`
+
+____________________________
+
+# Acrobat Reader
+
+## Forms
+
+Open the pdf, then more tools to choose Prepare the form.
+And you now have access to all the fields
+
+
+
+<br>
+
+____________________________
+
 # Thunderbird
 
 * Solve Temps limite de connexion au serveur IMAP.GMAIL.COM dépassé (cf. https://forums.mozfr.org/viewtopic.php?t=150821)
