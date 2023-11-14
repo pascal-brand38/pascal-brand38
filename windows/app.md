@@ -1,4 +1,19 @@
 ____________________________
+# Visual Studio Code
+
+## Settings
+Open menu File → Preferences → Settings → User Settings tab, and check the following
+* files: trim trailing whitespace
+* files: trim final newlines
+
+Command Palette (CTL-SHIFT-P), and then:
+* Python: Select Interpreter ==> C:\msys64\mingw64\bin\python.exe
+  (see answer of https://stackoverflow.com/questions/70795319/no-module-named-pil-visual-studio-code-error/77189429)
+
+
+
+
+____________________________
 # Libreoffice
 
 ## Forms
@@ -103,12 +118,12 @@ ____________________________
 cipher /w:c
 ```
 
-* Adding right-click command: 
+* Adding right-click command:
 In regedit, add the following (%1 is the file that is right-clicked, %w is its directory)
 ```
    HKEY_CLASSES_ROOT\*\shell\My New Command\Command
    default is
-        C:\msys64\msys2_shell.cmd -mingw64 -c 'python  mybin.py "--file=$0" "--dir=$1"'  "%1" "%w" 
+        C:\msys64\msys2_shell.cmd -mingw64 -c 'python  mybin.py "--file=$0" "--dir=$1"'  "%1" "%w"
 ```
 
 <br>
@@ -122,7 +137,7 @@ ____________________________
   1200dpi or higher on initial pixellisation step
 
 ## Misc. app
-* MusicBrainz Picard
+* [MusicBrainz Picard](https://picard.musicbrainz.org/)
 * CopyTrans Control Center / CopyTrans Manager
 * AndreaMosaic
 * Faststone Image Viewer

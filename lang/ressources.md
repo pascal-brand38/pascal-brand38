@@ -34,3 +34,18 @@ python -m twine upload dist/* --verbose --skip-existing
 
 In order to connect to pypi, a 2-factor authentication is required
 using OTP. I am using FreeOTP Authentication from Redhat
+
+### pypi.org statistics
+
+https://pypistats.org/packages/spriteforhtml
+
+
+
+## JS
+
+### Update all local packages (https://medium.com/subjective-developer/update-all-node-packages-to-latest-aa128396b92b)
+```
+npm install -g npm-check-updates
+ncu --upgrade
+npm install
+```

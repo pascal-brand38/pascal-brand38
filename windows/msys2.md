@@ -2,6 +2,8 @@
 
 Install MSYS2 (cf. https://www.msys2.org/) (each to be run til success without errors)
 
+Install node.js
+
 ## .bashrc: paths,...
 ```
 cd
@@ -52,6 +54,14 @@ pacman -S mingw-w64-x86_64-mupdf-mupdf-tools   # pdf repair
 
 ```
 python -m pip install --upgrade build
+python -m pip install pylint pytest
+```
+
+```
+npm install --global gulp-cli
+npm install --global vite
+npm install --global npm-check-updates
+npm update -g
 ```
 
 # Git configs
