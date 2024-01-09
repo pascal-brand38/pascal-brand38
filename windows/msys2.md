@@ -140,7 +140,5 @@ mkdir -p dev/other
 cd dev/other
 git clone git@github.com:XXX/web-design
 cd web-design
-mkdir -p site/papadamcats/dev/tmp
 npm install
 ```
-

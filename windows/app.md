@@ -10,7 +10,9 @@ Command Palette (CTL-SHIFT-P), and then:
 * Python: Select Interpreter ==> C:\msys64\mingw64\bin\python.exe
   (see answer of https://stackoverflow.com/questions/70795319/no-module-named-pil-visual-studio-code-error/77189429)
 
+## Extension
 
+* Live Server:
 
 
 ____________________________
@@ -25,7 +27,7 @@ ____________________________
 
 
 Unfortunately, the pdf has some errors, that can be highlighted
-with Acrobat Reader
+with Acrobat Acrobat
 
 <table>
 <tbody>
@@ -68,6 +70,28 @@ Note that the following npm package are way too simple
 * https://www.npmjs.com/package/@ninja-labs/verify-pdf
 * https://www.npmjs.com/package/ghostscript-node
 
+## Edit macros in Visual Studio Code
+From https://www.youtube.com/watch?v=xoO-Fx0fTpM&ab_channel=xlwings
+
+MUST BE INSTALLED ON WINDOWS or MACOS. No MINGW32.
+
+https://docs.xlwings.org/en/stable/installation.html
+
+From WinPython, portable version of python
+
+Run WinPython Command Prompt.exe - Raccourci
+pip install --upgrade xlwings
+pip install watchgod
+xlwings vba edit
+
+
+```
+python -m pip install xlwings
+xlwings
+```
+
+
+
 <br>
 
 ____________________________
@@ -107,6 +131,12 @@ ____________________________
 
 * Find huge emails: </br>
   **larger:5M**
+
+* Find without attachments: </br>
+  **!has:attachment**
+
+* Find by dates: <br>
+  **before:2020-01-01**
 
 <br>
 

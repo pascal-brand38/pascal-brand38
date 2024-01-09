@@ -4,6 +4,24 @@
 
 * On various languages: https://books.goalkicker.com/
 
+## JS
+
+### Publish on npm
+
+
+
+
+https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/
+
+
+* ```npm init``` to create the package
+* package.json
+** binaries:
+*** ```bin``` section for binary
+*** .mjs starts with ```#!/usr/bin/env node```
+
+npm install -g to have the binary global
+
 
 ## Python
 
