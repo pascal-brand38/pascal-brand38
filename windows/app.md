@@ -12,7 +12,12 @@ Command Palette (CTL-SHIFT-P), and then:
 
 ## Extension
 
-* Live Server:
+* Live Server
+* Even Better TOML
+* Github Actions
+* Pylance
+* webhint
+
 
 
 ____________________________
@@ -119,7 +124,8 @@ Redémarrer TB
 * Import mbox file: </br>
   Use *ImportExportTools NG* add-in
 
-
+* Signature --:
+  Parameters > General > Editeur de configuration > mail.identity.default.suppress_signature_separator = true
 
 <br>
 

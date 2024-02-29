@@ -9,3 +9,7 @@
 * Nettoyer l'ancien joint au vinaigre blanc
 * Ruban de masquage, à enlever immediatement après que le Sika soit lisser
 * Lisser en mouillant son doigt au white-spirit
+
+# 307
+
+* [Change the Car fender](https://www.youtube.com/watch?v=nDE1MHo03iA&ab_channel=didiermont)
