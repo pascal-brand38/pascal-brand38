@@ -37,6 +37,7 @@ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gedit mingw-w64-x86_64-meld3
 pacman -S mingw-w64-x86_64-python3 mingw-w64-x86_64-python3-pip mingw-w64-x86_64-python3-setuptools
 pacman -S mingw-w64-x86_64-optipng    # optional executable of spriteforhtml python package
 pacman -S mingw-w64-x86_64-mupdf-mupdf-tools   # pdf repair
+pacman -S mingw-w64-x86_64-github-cli  # gh command
 
 # used by Pillow python package - image manipulation
 # pacman -S \
