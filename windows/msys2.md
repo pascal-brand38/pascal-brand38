@@ -38,6 +38,7 @@ pacman -S mingw-w64-x86_64-python mingw-w64-x86_64-python-pip mingw-w64-x86_64-p
 pacman -S mingw-w64-x86_64-optipng    # optional executable of spriteforhtml python package
 pacman -S mingw-w64-x86_64-mupdf-mupdf-tools   # pdf repair
 pacman -S mingw-w64-x86_64-github-cli  # gh command
+pacman -S mingw-w64-x86_64-python-gsutil # firebase
 ```
 
 ## Python packages
@@ -163,4 +164,9 @@ cd ${HOME}/dev/other
 git clone git@github.com:OTHER/REPO
 cd REPO
 npm install
+```
+
+
+```
+https://api.github.com/users/pascal-brand38/repos
 ```
