@@ -35,6 +35,8 @@ pacman -Su
 pacman -S git
 pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gedit mingw-w64-x86_64-meld3
 pacman -S mingw-w64-x86_64-python mingw-w64-x86_64-python-pip mingw-w64-x86_64-python-setuptools
+pacman -S mingw-w64-x86_64-rust   # rust compiler to be able install twine with python to publish pipy project
+pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc-fortran mingw-w64-x86_64-openblas      # used to install pyHelper
 pacman -S mingw-w64-x86_64-optipng    # optional executable of spriteforhtml python package
 pacman -S mingw-w64-x86_64-mupdf-mupdf-tools   # pdf repair
 pacman -S mingw-w64-x86_64-github-cli  # gh command

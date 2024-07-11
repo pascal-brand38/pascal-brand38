@@ -167,13 +167,17 @@ In regedit, add the following (%1 is the file that is right-clicked, %w is its d
 ____________________________
 # Browser
 
-## [IE on Windows-11](https://www.tomsguide.fr/windows-11-internet-explorer-respire-encore-voici-comment-louvrir/)
+## [IE11 on Windows-11](https://www.tomsguide.fr/windows-11-internet-explorer-respire-encore-voici-comment-louvrir/)
 
 * Tapez Options Internet dans la barre de recherche du menu Démarrer.
 * Ouvrez l’applet du Panneau de configuration qui apparaît dans les résultats.
 * Trouvez l’onglet Programmes puis cliquez sur Gérer les modules complémentaires.
 * Cliquez enfin sur En savoir plus sur les barres d’outils et les extensions dans le coin inférieur gauche de la fenêtre.
 * Pour une raison étrange, cela lancera Internet Explorer en contournant les commandes qui vous dirigent de force sur Edge.
+
+## Older version of chrome
+* NO: https://vikyd.github.io/download-chromium-history-version/#/
+
 
 ____________________________
 # Misc.

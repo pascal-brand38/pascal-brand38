@@ -33,6 +33,8 @@ as well as
 
 * Installation
 ```
+python3 -m pip install --upgrade setuptools wheel twine
+
 python3 -m pip install --upgrade build twine
 python3 -m build
 ```
