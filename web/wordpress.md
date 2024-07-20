@@ -57,6 +57,23 @@ Then edit style.css that can be found in ___wp-content/themes/astra-child/style.
 ___[Appearance][Personnaliser][CSS aditionnels]___
 
 
+# Testing
+
+* ___lighthouse___ works on localhost
+* ___[yellowlabs.tools ](https://yellowlab.tools/)___ does not work on localhost. So you need to
+  [install a local server](https://github.com/YellowLabTools/YellowLabTools/wiki/Install-your-private-server)
+  locally, for example on msys2 / mingw64:
+```bash
+mkdir -p ~/dev/3rdparties
+cd ~/dev/3rdparties
+git clone https://github.com/YellowLabTools/YellowLabTools-server.git
+cd YellowLabTools-server
+npm install --force
+mkdir results tmp
+node bin/server.js
+```
+and you can then access http://localhost:8383/, and run it on url without https http://localhost/wordpress
+
 # Resources
 Images:
 * unsplash.com
