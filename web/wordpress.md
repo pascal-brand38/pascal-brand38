@@ -7,7 +7,7 @@
   * open chrome, and type  localhost  to check what is installed
 * Create a database
   * http://localhost/phpmyadmin/  username=root  password=
-  * Create a new database called wordpress, with latin1_bin
+  * Create a new database called wordpress
 * Install wordpress from https://fr.wordpress.org/
   * Get wordpress
   * unzip all files in c:\wamp\www\wordpress
@@ -36,6 +36,21 @@ Update the header (and menu) and footer in ___[Appearance][Editeur][Modèle][Gé
 ## typography
 * Installer ___Fonts PLugin__ avec ___[Extensions][Ajouter][Fonts plugin]___
 * Then ___[Customize Fonts][Basic]___ and you can use Roboto as the base font family, and Kalam as the heading typography.
+
+
+## Child Theme
+
+https://wpastra.com/guides-and-tutorials/wordpress-create-child-theme/
+
+Use plugin ___Child Theme Configurator___
+
+Then ___[Tools][Child Theme]___
+
+with Utilisez la file d’attente de style de WordPress.
+
+
+Then edit style.css that can be found in ___wp-content/themes/astra-child/style.css___
+
 
 ## CSS
 
