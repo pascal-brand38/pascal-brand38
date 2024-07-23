@@ -14,7 +14,39 @@
 * Initialize by connecting to localhost/wordpress
 
 
-# Create first site
+# Create first site with [Astra](https://www.youtube.com/watch?v=TBZd9oligCw)
+
+* Connect to localhost/wordpress/wp-admin
+* Removes all pages and articles
+* Install appearance theme ___Astra___
+* [Create child theme](https://wpastra.com/guides-and-tutorials/wordpress-create-child-theme):
+  * Install Use plugin ___Child Theme Configurator___
+  * Then ___[Tools][Child Theme]___, with _Utilisez la file d’attente de style de WordPress_
+  * Then edit style.css that can be found in ___wp-content/themes/astra-child/style.css___
+* Install plugins:
+  *  ___[Spectra](https://www.youtube.com/watch?v=GLNzTxArR6Y)___
+  *  ___[WPForms](https://youtu.be/o2nE1P74WxQ)___
+  * ___WP Mail SMTP___
+
+* [Réglages][Permalien] => ___Titre de la pulication___
+* Add pages
+* Create the main menu in ___[Appearance][Menus]___
+* Define the first page to show in ___[Réglage][Lecture][La page d'accueil affiche une page statique]___
+
+* Personaliser the theme in ___[Appearance][Personaliser]___
+  * ___[Identité du site]___: set logo and favicon.
+    It is possible to use SVG logo
+  * ___[Global]___
+    * ___[Typographie]___: You can change the font for all titles and headings.
+      Google fonts are possible, such as Kalam
+    * ___[Colors]___: titles and headings, background,... HEADER and FOOTER do not have the correct background color
+
+
+
+
+
+
+# Create first site with Variations
 
 Cf. https://www.youtube.com/watch?v=wCDaxehVwoY
 
@@ -74,6 +106,34 @@ node bin/server.js
 ```
 and you can then access http://localhost:8383/, and run it on url without https http://localhost/wordpress
 
+# Installing on the internet
+
+## https://www.infinityfree.com/
+
+webtools.infinityfreeapp.com
+ftp with
+* if0_36961486
+* generic password without the special char
+* hostname for ftp: ftpupload.net
+
+Control panel (to create a database...): https://cpanel.infinityfree.com/panel/indexpl.php?id=cd54fe8ab5ab8175d2df59bd445d4faa2ebc3624
+
+[Upload from wamp to new website:](https://capitainewp.io/formations/developper-theme-wordpress/mise-en-ligne-wordpress/)
+* import files using ftp
+* export the database using phpadmin locally
+* import the database on infinityfree:
+  * create a database
+  * admin it
+  * import the database
+* update the url in the database:
+  * table wp_options
+  * update siteurl and home, that point to localhost, to the new website webtools.infinityfreeapp.com
+* update wp-config.php on the server, to reflect the database name, username,...
+* switch absolute url from localhost to new website
+* construct new permalinks
+
+
+
 # Resources
 Images:
 * unsplash.com
@@ -83,5 +143,3 @@ Images:
 
 # TODO
 * Multi language
-* Astra https://www.youtube.com/watch?v=TBZd9oligCw
-* Spectra https://www.youtube.com/watch?v=GLNzTxArR6Y
