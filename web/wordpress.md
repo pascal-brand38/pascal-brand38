@@ -21,7 +21,7 @@
 * Install appearance theme ___Astra___
 * [Create child theme](https://wpastra.com/guides-and-tutorials/wordpress-create-child-theme):
   * Install Use plugin ___Child Theme Configurator___
-  * Then ___[Tools][Child Theme]___, with _Utilisez la file d’attente de style de WordPress_
+  * Then ___[Tools][Child Theme]___, with _Use the WordPress style queue_
   * Then edit style.css that can be found in ___wp-content/themes/astra-child/style.css___
 * Install plugins:
   *  ___[Spectra](https://www.youtube.com/watch?v=GLNzTxArR6Y)___
@@ -42,51 +42,22 @@
     * ___[Colors]___: titles and headings, background,... HEADER and FOOTER do not have the correct background color
 
 
+## Colors
+
+Astra has 9 colors in his palette. In the following, we will use:
+* color-1: link color
+* color-2: hovered link color
+* color-3: headings color
+* color-4: body text color
+* color-5: site background color
+* color-6: content background color
+* color-7: border color
+* color-8 and color-9 are not used directly
+  * color-8 is color-7 when hovered
+
+All colors can be used in css using ```var(--ast-global-color-0)``` (starts from 0)
 
 
-
-
-# Create first site with Variations
-
-Cf. https://www.youtube.com/watch?v=wCDaxehVwoY
-
-* Connect to localhost/wordpress/wp-admin
-* Removes all pages and articles
-* Install appearance theme ___Variations___
-* [Réglages][Permalien] => ___Titre de la pulication___
-* Add pages
-* Sort the menu in ___[Appearance][Editeur][Navigation]___
-* Define the first page to show in ___[Réglage][Lecture][La page d'accueil affiche une page statique]___
-* To generate some content, you may use tyler.com
-* Update the images: glisser ou [remplacer][téléverser]
-
-
-## Menu
-Update the header (and menu) and footer in ___[Appearance][Editeur][Modèle][Gérer tous les modèles][Pages]___
-  * When updating the logo, do not use 'Utiliser comme icone du site', but go in ___[Réglages][General]___ and modify the icon of the site in your favicon.
-
-## typography
-* Installer ___Fonts PLugin__ avec ___[Extensions][Ajouter][Fonts plugin]___
-* Then ___[Customize Fonts][Basic]___ and you can use Roboto as the base font family, and Kalam as the heading typography.
-
-
-## Child Theme
-
-https://wpastra.com/guides-and-tutorials/wordpress-create-child-theme/
-
-Use plugin ___Child Theme Configurator___
-
-Then ___[Tools][Child Theme]___
-
-with Utilisez la file d’attente de style de WordPress.
-
-
-Then edit style.css that can be found in ___wp-content/themes/astra-child/style.css___
-
-
-## CSS
-
-___[Appearance][Personnaliser][CSS aditionnels]___
 
 
 # Testing
@@ -131,7 +102,6 @@ Control panel (to create a database...): https://cpanel.infinityfree.com/panel/i
 * update wp-config.php on the server, to reflect the database name, username,...
 * switch absolute url from localhost to new website
 * construct new permalinks
-
 
 
 # Resources
