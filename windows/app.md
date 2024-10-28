@@ -146,6 +146,12 @@ ____________________________
 
 <br>
 
+
+# Github
+
+Search for the PR I sibmitted, but not in my own repo:
+* is:pr author:pascal-brand38 -user:pascal-brand38
+
 ____________________________
 # DOS / Windows
 
