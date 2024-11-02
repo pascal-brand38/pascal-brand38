@@ -30,7 +30,6 @@ npx astro add astro-sprite
 
 # Integration as local
 
-
 ```js
 integrations: [
   {
@@ -48,3 +47,8 @@ integrations: [
   },
 ],
 ```
+
+
+# Have a look at
+
+* Performance analysis: https://astro-page-insight.pages.dev/others/demo/
