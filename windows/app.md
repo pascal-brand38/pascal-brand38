@@ -98,6 +98,13 @@ xlwings
 
 
 
+Force pnpm usage:
+```json
+"scripts": {
+  "preinstall": "npx only-allow pnpm",
+}
+```
+
 <br>
 
 ____________________________
@@ -152,6 +159,24 @@ ____________________________
 
 Search for the PR I sibmitted, but not in my own repo:
 * is:pr author:pascal-brand38 -user:pascal-brand38
+
+git remote add webtools git@github.com:pascal-brand38/webtools-helper.git
+git fetch --all
+git checkout remotes/origin/webtools
+git checkout -b webtools
+git checkout main
+git mv README.md README-org.md
+git cherry-pick ..webtools
+
+
+
+Push a change to an existing PR made by apatel369:patch-2 on astro.build
+git remote add apatel369 git@github.com:apatel369/astro.build.git
+git fetch apatel369
+git checkout -b patch-2 remotes/apatel369/patch-2
+
+
+
 
 ____________________________
 # DOS / Windows

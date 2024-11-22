@@ -7,6 +7,10 @@ git remote -v
 git push origin main
 
 
+
+npm create astro@latest -- --template portfolio
+
+
 ## SCSS
 
 npm install sass
@@ -48,7 +52,19 @@ integrations: [
 ],
 ```
 
+# Misc docs:
+* [Pass Frontmatter variables to scripts](https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts)
+* [Create a component on npm](https://github.com/withastro/astro/tree/0ae1365533909b403eddcf77b47895c8e3f5dfb2/examples/component/packages/my-component)
 
 # Have a look at
 
 * Performance analysis: https://astro-page-insight.pages.dev/others/demo/
+
+# Choosing npm packages
+
+In google, search for
+```bash
+site:npmtrends.com PhotoSwipe
+```
+
+This will show pages with PhotoSwipe, such as the one of PhotoSwipe, but also comparisons with alternatives
