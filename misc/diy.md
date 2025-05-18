@@ -13,3 +13,9 @@
 # 307
 
 * [Change the Car fender](https://www.youtube.com/watch?v=nDE1MHo03iA&ab_channel=didiermont)
+
+
+# Robot AstraPool H5 Duo
+
+* https://www.youtube.com/watch?v=4QFESzTKY4Y&ab_channel=Jos%C3%A9eJimenez
+* https://www.youtube.com/watch?v=yj7ZTYSOuoQ&ab_channel=HowToDoYourself

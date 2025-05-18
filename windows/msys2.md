@@ -41,7 +41,7 @@ pacman -S mingw-w64-x86_64-optipng    # optional executable of spriteforhtml pyt
 pacman -S mingw-w64-x86_64-mupdf-mupdf-tools   # pdf repair
 pacman -S mingw-w64-x86_64-github-cli  # gh command
 pacman -S mingw-w64-x86_64-python-gsutil # firebase
-pacman -S rsync
+pacman -S rsync zip unzip
 ```
 
 ## Python packages

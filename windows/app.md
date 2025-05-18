@@ -48,7 +48,7 @@ with Acrobat Acrobat
 </td>
 
 <td>
-<img src="https://raw.githubusercontent.com/pascal-brand38/docs/main/windows/pdf-errors.png"/>
+<img src="https://raw.githubusercontent.com/pascal-brand38/pascal-brand38/main/windows/pdf-errors.png"/>
 </td>
 </tr>
 </tbody>
@@ -56,11 +56,11 @@ with Acrobat Acrobat
 
 
 To correct errors using Acrobat Reader, save it as `PDF/A 1a`, as in the following:
-![](https://raw.githubusercontent.com/pascal-brand38/docs/main/windows/pdf-save-pdfA-1a.png)
+![](https://raw.githubusercontent.com/pascal-brand38/pascal-brand38/main/windows/pdf-save-pdfA-1a.png)
 
 With prepress, this is now possible to check there are no PDF synatx errors
 
-![](https://raw.githubusercontent.com/pascal-brand38/docs/main/windows/pdf-correct.png)
+![](https://raw.githubusercontent.com/pascal-brand38/pascal-brand38/main/windows/pdf-correct.png)
 
 The resulting pdf could then being optimized and reduced using Orpalis Pdf Reducer 3.
 
@@ -176,6 +176,14 @@ git fetch apatel369
 git checkout -b patch-2 remotes/apatel369/patch-2
 
 
+
+Splitting a subfolder out into a new repository
+https://docs.github.com/en/get-started/using-git/splitting-a-subfolder-out-into-a-new-repository
+
+python -m pip install git_filter_repo
+git clone ...
+cd repo
+python  /c/msys64/mingw64/lib/python3.11/site-packages/git_filter_repo.py --subdirectory-filter FOLDER-NAME
 
 
 ____________________________

@@ -1,8 +1,5 @@
 # Resources
 
-## Fonts
-
-* https://modernfontstacks.com/
 
 ## Colors
 
@@ -13,7 +10,6 @@
 
 * popover API: https://developer.chrome.com/blog/introducing-popover-api/
 * tinaCMS: cms under git
-* Astro
 
 
 # Tutorials

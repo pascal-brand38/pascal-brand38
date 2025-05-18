@@ -17,15 +17,6 @@ npm install sass
 import '../scss/style.scss'
 
 
-# Fonts
-
-Go to https://fontsource.org/ to select the font you want, for example Kalam
-
-npm install @fontsource/kalam
-
-import '@fontsource/Kalam';
-
-
 # Sprites
 
 npm install astro-sprite
@@ -59,6 +50,11 @@ integrations: [
 # Have a look at
 
 * Performance analysis: https://astro-page-insight.pages.dev/others/demo/
+* Caniuse.com on my access: https://caniuse.com/ciu/import
+* Astro gallery: https://github.com/SaintSin/astro-pandabox
+* Vite tests: https://vitest.dev/
+* Some free courses: https://courses.joshwcomeau.com/joy-of-react/open-house/00-welcome
+* Creating a blog with a headless CMS: https://www.youtube.com/watch?v=Thudicbgqtg&ab_channel=KevinPowell
 
 # Choosing npm packages
 

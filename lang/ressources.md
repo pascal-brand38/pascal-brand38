@@ -43,7 +43,7 @@ python3 -m build
 
 ```
 Update version in pyproject.toml
-git tag -a "x.y.z"
+git tag -a "x.y.z" -m "x.y.z"
 git push --tags
 rm -rf dist src/*.egg-info
 python -m build
