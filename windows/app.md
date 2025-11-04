@@ -218,6 +218,12 @@ ____________________________
 ## Older version of chrome
 * NO: https://vikyd.github.io/download-chromium-history-version/#/
 
+____________________________
+# ffmpeg
+For example, to trim from the 5-second mark to the 9-second mark:
+
+```ffmpeg -ss 00:00:05 -to 00:00:09 -i myclip.mp4 trimmed_to.mp4```
+
 
 ____________________________
 # Misc.
