@@ -23,6 +23,10 @@ https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-packa
 npm install -g to have the binary global
 
 
+npm login
+npm publish
+
+
 ## Python
 
 ### How to Publish an Open-Source Python Package to PyPI

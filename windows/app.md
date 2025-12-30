@@ -224,6 +224,16 @@ For example, to trim from the 5-second mark to the 9-second mark:
 
 ```ffmpeg -ss 00:00:05 -to 00:00:09 -i myclip.mp4 trimmed_to.mp4```
 
+## avi to mkv
+```
+ffmpeg -loglevel quiet -fflags +genpts -i D.1x02.avi -c:v copy -c:a copy D.1x02.mkv
+
+for file in *.avi */*.avi; do
+  target="${file%.*}.mkv"
+  echo Processing "$file" to "$target"
+  ffmpeg -loglevel quiet -fflags +genpts -i "$file" -c:v copy -c:a copy "$target"
+done
+```
 
 ____________________________
 # Misc.
