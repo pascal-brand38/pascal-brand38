@@ -11,8 +11,8 @@ cp .bashrc .bashrc.save
 cat << EOF >> .bashrc
 export MSYS="winsymlinks:nativestr  ork
 PATH=\$PATH:"/c/Program Files/nodejs"               # nodejs must be installed
-NODE_PATH=`cygpath -u "$APPDATA/npm"`      # "/c/Users/<MYNAME>/AppData/Roaming/npm"
-PATH=\$PATH:"\$NODE_PATH"
+NODE_PATH=`cygpath -u "$APPDATA/npm"`               # "/c/Users/<MYNAME>/AppData/Roaming/npm"
+PATH=$PATH:"/c/php"                                 # used for apache serverPATH=\$PATH:"\$NODE_PATH"
 export SETUPTOOLS_USE_DISTUTILS=stdlib              # Pillow (python image) installation - cf. https://pillow.readthedocs.io/en/latest/installation.html
 EOF
 ```
@@ -43,6 +43,7 @@ pacman -S mingw-w64-x86_64-github-cli  # gh command
 pacman -S mingw-w64-x86_64-python-gsutil # firebase
 pacman -S rsync zip unzip
 pacman -S mingw-w64-x86_64-hugo
+pacman -S subversion
 ```
 
 ## Python packages
