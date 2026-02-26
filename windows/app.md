@@ -6,6 +6,8 @@ Open menu File → Preferences → Settings → User Settings tab, and check the
 * files: trim trailing whitespace
 * files: trim final newlines
 * editor.detectIndentation to true
+* files Text Editor: eol \n (which is linux)
+
 
 Command Palette (CTL-SHIFT-P), and then:
 * Python: Select Interpreter ==> C:\msys64\mingw64\bin\python.exe

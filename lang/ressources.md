@@ -14,17 +14,34 @@
 https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/
 
 
+ncu -u to update all packages in package.json
+npm i --package-lock-only
+
 * ```npm init``` to create the package
 * package.json
-** binaries:
-*** ```bin``` section for binary
-*** .mjs starts with ```#!/usr/bin/env node```
+  * binaries:
+    * ```bin``` section for binary
+    * .mjs starts with ```#!/usr/bin/env node```
 
 npm install -g to have the binary global
 
 
+## Publish a npm package
+```bash
+# update package.json and package-lock.json, commit and create a tag
+npm version <patch | minor | major>
+git push  && git push --tags
 npm login
 npm publish
+```
+
+## git
+
+git push -d origin <branchname>             # Delete remote
+git branch -d <branchname>                  # Delete local
+git remote update origin --prune            # Delete remote branch from local gitk --all
+git fetch origin pull/ID/head:BRANCH_NAME   # Fetch a pull-request
+
 
 
 ## Python

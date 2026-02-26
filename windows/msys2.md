@@ -14,6 +14,7 @@ PATH=\$PATH:"/c/Program Files/nodejs"               # nodejs must be installed
 NODE_PATH=`cygpath -u "$APPDATA/npm"`               # "/c/Users/<MYNAME>/AppData/Roaming/npm"
 PATH=$PATH:"/c/php"                                 # used for apache serverPATH=\$PATH:"\$NODE_PATH"
 export SETUPTOOLS_USE_DISTUTILS=stdlib              # Pillow (python image) installation - cf. https://pillow.readthedocs.io/en/latest/installation.html
+alias help='~/dev/pascal-brand38/pascal-brand38/help/help.bash'
 EOF
 ```
 
@@ -64,9 +65,13 @@ pacman -S \
     mingw-w64-x86_64-openjpeg2 \
     mingw-w64-x86_64-libimagequant \
     mingw-w64-x86_64-libraqm
+
+# pacman -S mingw-w64-x86_64-libheif
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade Pillow --no-binary :all:
 CFLAGS="-Wno-incompatible-pointer-types" python3 -m pip install --upgrade Pillow
+# python -m pip install pillow-heif
+
 python -m pip install responsiveimage
 python -m pip install py-spriteforhtml
 
@@ -80,6 +85,9 @@ python -m pip install pylint pytest
 npm install --global gulp-cli
 npm install --global vite
 npm install --global npm-check-updates
+npm install --glob yarn
+npx yarn
+
 npm update -g
 ```
 

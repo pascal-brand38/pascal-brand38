@@ -1,0 +1,8 @@
+# ### Publish a npm package
+
+# update package.json and package-lock.json, commit and create a tag
+npm version <patch | minor | major>
+
+git push  && git push --tags
+npm login
+npm publish
