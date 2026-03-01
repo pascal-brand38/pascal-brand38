@@ -1,0 +1,4 @@
+# Fetch a pullrequest
+export ID=4 && git fetch origin pull/$ID/head:pr$ID
+# or use the alias
+pascal-git-fetch-pr 4
