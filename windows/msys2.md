@@ -14,7 +14,6 @@ PATH=\$PATH:"/c/Program Files/nodejs"               # nodejs must be installed
 NODE_PATH=`cygpath -u "$APPDATA/npm"`               # "/c/Users/<MYNAME>/AppData/Roaming/npm"
 PATH=$PATH:"/c/php"                                 # used for apache serverPATH=\$PATH:"\$NODE_PATH"
 export SETUPTOOLS_USE_DISTUTILS=stdlib              # Pillow (python image) installation - cf. https://pillow.readthedocs.io/en/latest/installation.html
-alias help='~/dev/pascal-brand38/pascal-brand38/help/help.bash'
 source ~/dev/pascal-brand38/pascal-brand38/help/alias.bash
 EOF
 ```
