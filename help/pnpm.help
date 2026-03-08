@@ -1,0 +1,13 @@
+pnpm store prune      # clean pnpm cache
+pnpm store path       # pnpm store location
+
+### npm to pnpm
+rm -rf node_modules
+[Optional] Create pnpm-workspace.yaml if you use workspaces
+pnpm import
+git rm package-lock.json
+pnpm install
+pnpm approve-builds  # approve all of them
+add in package.json:
+  "packageManager": "pnpm@10.30.3",
+Replace all npm run xxx commands to pnpm run xxx

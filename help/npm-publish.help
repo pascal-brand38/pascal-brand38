@@ -6,3 +6,7 @@ npm version <patch | minor | major>
 git push  && git push --tags
 npm login
 npm publish
+# And then create a release in github
+
+npm pack   # create a local package instead of publishing it on npm
+npm unpublish astro-swiper@2.2.0   # unpublish a package - delete it fro npmjs.org only, not from mirrors
