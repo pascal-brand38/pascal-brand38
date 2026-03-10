@@ -1,4 +1,2 @@
-# Fetch a pullrequest
-export ID=4 && git fetch origin pull/$ID/head:pr$ID
-# or use the alias
-pascal-git-fetch-pr 4
+export ID=4 && git fetch origin pull/$ID/head:pr$ID   # Fetch a pullrequest
+pascal-git-fetch-pr 4 # or use the alias
