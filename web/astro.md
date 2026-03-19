@@ -64,3 +64,8 @@ site:npmtrends.com PhotoSwipe
 ```
 
 This will show pages with PhotoSwipe, such as the one of PhotoSwipe, but also comparisons with alternatives
+
+
+# Badges
+
+- https://gitroll.io/for-developers

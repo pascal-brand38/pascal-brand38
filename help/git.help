@@ -1,2 +1,4 @@
 export ID=4 && git fetch origin pull/$ID/head:pr$ID   # Fetch a pullrequest
-pascal-git-fetch-pr 4 # or use the alias
+pascal-git-fetch-pr 4                             # or use the alias
+git grep myword $(git rev-list --all)             # grep on all commits in all branches
+git grep <regexp> $(git rev-list <rev1>..<rev2>)  # grep on all commits between 2 revisons

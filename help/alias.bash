@@ -13,3 +13,16 @@ function pascal-git-clone() {
   git clone git@github.com:$OWNER/$REPO.git
   cd $REPO
 }
+
+function pascal-npminstall-local-packages() {
+  REPO=$1
+  if [ -z "$REPO" ]; then
+    REPO="swiper"
+  fi
+  echo "Packing and installing local packages astro-$REPO..."
+  cd ~/dev/pascal-brand38/astro/astro-$REPO
+  npm pack --pack-destination /tmp
+  cd -
+  npm install /tmp/astro-$REPO-*.tgz
+  rm /tmp/astro-$REPO-*.tgz
+}
