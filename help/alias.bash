@@ -29,3 +29,5 @@ function pascal-npminstall-local-packages() {
   rm /tmp/$REPO-*.tgz
 }
 export -f pascal-npminstall-local-packages
+
+source ~/dev/pascal-brand38/pascal-brand38/help/alias/alias-magick.bash
