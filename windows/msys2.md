@@ -36,6 +36,7 @@ pacman -Su
 pacman -S git
 pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gedit mingw-w64-x86_64-meld3
 pacman -S mingw-w64-x86_64-python mingw-w64-x86_64-python-pip mingw-w64-x86_64-python-setuptools
+pacman -S mingw-w64-x86_64-python-virtualenv
 pacman -S mingw-w64-x86_64-rust   # rust compiler to be able install twine with python to publish pipy project
 pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc-fortran mingw-w64-x86_64-openblas      # used to install pyHelper
 pacman -S mingw-w64-x86_64-optipng    # optional executable of spriteforhtml python package
@@ -45,18 +46,13 @@ pacman -S mingw-w64-x86_64-python-gsutil # firebase
 pacman -S rsync zip unzip
 pacman -S mingw-w64-x86_64-hugo
 pacman -S subversion
-```
+pacman -S mingw-w64-x86_64-python-pipx
 
-## Python packages
-
-Check for Pilow installation on msys2
-(cf. https://pillow.readthedocs.io/en/latest/installation/basic-installation.html#basic-installation
-and https://pillow.readthedocs.io/en/latest/installation/building-from-source.html#building-from-source)
-
-```bash
+pacman -S mingw-w64-x86_64-imagemagick
 pacman -S mingw-w64-x86_64-ffmpeg mingw-w64-x86_64-optipng
 pacman -S \
     mingw-w64-x86_64-libjpeg-turbo \
+    mingw-w64-x86_64-libpng \
     mingw-w64-x86_64-zlib \
     mingw-w64-x86_64-libtiff \
     mingw-w64-x86_64-freetype \
@@ -65,14 +61,36 @@ pacman -S \
     mingw-w64-x86_64-openjpeg2 \
     mingw-w64-x86_64-libimagequant \
     mingw-w64-x86_64-libraqm
+pacman -S \
+    mingw-w64-x86_64-bzip2 mingw-w64-x86_64-cc-libs mingw-w64-x86_64-djvulibre mingw-w64-x86_64-fftw mingw-w64-x86_64-flif \
+    mingw-w64-x86_64-fontconfig mingw-w64-x86_64-freetype mingw-w64-x86_64-glib2 mingw-w64-x86_64-gsfonts \
+    mingw-w64-x86_64-jbigkit mingw-w64-x86_64-lcms2 mingw-w64-x86_64-libheif mingw-w64-x86_64-liblqr \
+    mingw-w64-x86_64-libltdl mingw-w64-x86_64-libpng mingw-w64-x86_64-libraqm mingw-w64-x86_64-libraw \
+    mingw-w64-x86_64-libtiff mingw-w64-x86_64-libwebp mingw-w64-x86_64-libwinpthread mingw-w64-x86_64-libwmf \
+    mingw-w64-x86_64-libxml2 mingw-w64-x86_64-omp mingw-w64-x86_64-openjpeg2 mingw-w64-x86_64-ttf-dejavu \
+    mingw-w64-x86_64-xz mingw-w64-x86_64-zlib mingw-w64-x86_64-zstd
+pacman -S\
+    mingw-w64-x86_64-ghostscript mingw-w64-x86_64-graphviz mingw-w64-x86_64-libjxl mingw-w64-x86_64-librsvg \
+    mingw-w64-x86_64-libultrahdr mingw-w64-x86_64-openexr
+```
 
+
+## Python packages
+
+Check for Pilow installation on msys2
+(cf. https://pillow.readthedocs.io/en/latest/installation/basic-installation.html#basic-installation
+and https://pillow.readthedocs.io/en/latest/installation/building-from-source.html#building-from-source)
+
+```bash
 # pacman -S mingw-w64-x86_64-libheif
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade Pillow --no-binary :all:
 CFLAGS="-Wno-incompatible-pointer-types" python3 -m pip install --upgrade Pillow
+CFLAGS="-Wno-incompatible-pointer-types" pipx upgrade Pillow --no-binary :all:
+
 # python -m pip install pillow-heif
 
-python -m pip install responsiveimage
+pipx install responsiveimage
 python -m pip install py-spriteforhtml
 
 python -m pip install --upgrade build
