@@ -1,0 +1,16 @@
+find .
+
+export file=IMG_8419.PNG
+export creationdate=`magik identify -format '%[exif:datetime]' $file | sed -e 's/://g' -e 's/ /_/g'`
+export imgformat=`magick identify -format "%m" $file`
+
+
+# doc for size: https://imagemagick.org/script/command-line-processing.php#geometry&gsc.tab=0
+
+
+
+magick IMG_8419.PNG -resize 2048x2048\> output.PNG
+magick IMG_8419.PNG -colors 255 -resize 2048x2048\> output.PNG
+magick IMG_8419.PNG $resize png32:output.PNG
+
+magick identify -format "%f %wx%h %m" filename.jpg

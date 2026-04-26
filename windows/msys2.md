@@ -15,6 +15,9 @@ NODE_PATH=`cygpath -u "$APPDATA/npm"`               # "/c/Users/<MYNAME>/AppData
 PATH=$PATH:"/c/php"                                 # used for apache serverPATH=\$PATH:"\$NODE_PATH"
 export SETUPTOOLS_USE_DISTUTILS=stdlib              # Pillow (python image) installation - cf. https://pillow.readthedocs.io/en/latest/installation.html
 source ~/dev/pascal-brand38/pascal-brand38/help/alias.bash
+# source ~/python-virtualenv/bin/activate
+# alias python='C:\\msys64\\usr\\bin\\python.exe'
+PATH="/c/Users/pasca/AppData/Local/Programs/Python/Python310/":\$PATH
 EOF
 ```
 
@@ -77,23 +80,30 @@ pacman -S\
 
 ## Python packages
 
+```bash
+# python virtual environement
+#python -m pip install virtualenv
+#python -m virtualenv python-virtualenv
+#source ~/python-virtualenv/bin/activate
+```
+
 Check for Pilow installation on msys2
 (cf. https://pillow.readthedocs.io/en/latest/installation/basic-installation.html#basic-installation
 and https://pillow.readthedocs.io/en/latest/installation/building-from-source.html#building-from-source)
 
 ```bash
 # pacman -S mingw-w64-x86_64-libheif
-python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade Pillow --no-binary :all:
-CFLAGS="-Wno-incompatible-pointer-types" python3 -m pip install --upgrade Pillow
-CFLAGS="-Wno-incompatible-pointer-types" pipx upgrade Pillow --no-binary :all:
+python -m pip install setuptools
+python -m pip install --no-build-isolation --upgrade pip setuptools wheel build
+python -m pip install --upgrade Pillow --no-binary :all:
+CFLAGS="-Wno-incompatible-pointer-types" python -m pip install --upgrade Pillow
 
 # python -m pip install pillow-heif
 
-pipx install responsiveimage
+#python -m pip install responsiveimage
+python -m pip install ~/dev/pascal-brand38/python/py-responsiveimage
 python -m pip install py-spriteforhtml
 
-python -m pip install --upgrade build
 python -m pip install pylint pytest
 ```
 
@@ -104,6 +114,7 @@ npm install --global gulp-cli
 npm install --global vite
 npm install --global npm-check-updates
 npm install --glob yarn
+npm install --glob bun
 npx yarn
 
 npm update -g
