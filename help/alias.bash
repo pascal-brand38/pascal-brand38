@@ -16,18 +16,11 @@ function pascal-git-clone() {
 }
 export -f pascal-git-clone
 
-function pascal-npminstall-local-packages() {
-  REPO=$1
-  if [ -z "$REPO" ]; then
-    REPO="astro-swiper"
-  fi
-  echo "Packing and installing local packages $REPO..."
-  cd ~/dev/pascal-brand38/astro/$REPO
-  npm pack --pack-destination /tmp
-  cd -
-  npm install /tmp/$REPO-*.tgz
-  rm /tmp/$REPO-*.tgz
+function pascal-cache-clean() {
+  npm cache clean --force
+  pnpm store prune
+  yarn cache clean
 }
-export -f pascal-npminstall-local-packages
 
 source ~/dev/pascal-brand38/pascal-brand38/help/alias/alias-magick.bash
+source ~/dev/pascal-brand38/pascal-brand38/help/alias/alias-npm.bash

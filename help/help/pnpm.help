@@ -1,5 +1,6 @@
 pnpm store prune      # clean pnpm cache
 pnpm store path       # pnpm store location
+pnpm update --latest  # update package.json dependencies to latest
 
 ### npm to pnpm
 rm -rf node_modules
